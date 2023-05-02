@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PrincipalPage {
     private WebDriver driver;
-    private String titulo;
+    private String principalpage;
 
     public PrincipalPage(WebDriver driver) {
         this.driver = driver;
@@ -19,8 +19,7 @@ public class PrincipalPage {
     public String getTitulo(){
        return principalMap.txtTitulo.getText();
     }
-    public void clickBotao(){
-        principalMap.btnTitulo.click();
+    public void clickBotao(){principalMap.btnTitulo.click();
 
     }
 }
